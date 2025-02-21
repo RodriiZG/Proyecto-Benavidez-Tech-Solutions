@@ -1,0 +1,301 @@
+/* Reset de CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Exo", serif;
+}
+
+body {
+    background-color: rgb(154, 167, 162);
+    
+}
+
+h1 {
+    font-family: "Exo", serif;
+}
+
+ /*---------- header------------------------------------*/
+
+.fondoHeader {
+    background-color: blanchedalmond;
+}
+
+/*header {
+    background-color: antiquewhite;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}*/
+
+header img {
+    width: 100px;
+    height: 100px;
+    margin: 10px 10px;
+}
+
+/*header ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+header li {
+    margin: 10px;
+}*/
+
+.fondoHeader a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-family: "Exo", serif;
+    font-weight: 600;
+}
+
+/*------------------main index-----------------------------*/
+
+#titulo {
+    background-color: burlywood;
+    display: block;
+    text-align: center;
+    font-family: "Bungee Outline", serif;
+    font-size: 2.2rem;
+    font-weight: 900;
+    content: 150px 150px;
+    padding: 20px 20px;
+    margin: 0px 40%;
+    margin-top: 50px;
+    justify-content: center;
+}
+
+#subtitulo {
+    font-family: "Changa", serif;
+    background-color: burlywood;
+    text-align: center;
+    content: 150px 150px;
+    padding: 20px 20px;
+    margin: 0px 40%;
+    margin-bottom: 100px;
+}
+
+#section-index {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 30px;
+    margin-bottom: 100px;
+    font-family: "Exo", serif;
+    font-size: 1em;
+    font-weight: 500;
+    text-align: center;
+    
+}
+
+section img {
+    width: 150px;
+    height: 150px;
+}
+
+.parrafo-index {
+    text-align: center;
+    margin: 15px;
+    width: 200px;
+}
+
+/*--------------------main contact--------------------------------*/
+
+main a {
+    text-decoration: none;
+    color: black;
+}
+
+.contenedor-grid {
+    font-family: "Exo", serif;
+    font-weight: 500;
+    padding: 10px;
+    margin-bottom: 150px;
+    display: grid;
+    grid-template-columns: 25% 25% 50%;
+    grid-template-rows: 50px 100px repeat(4,100px);
+    grid-template-areas: 
+        "titulo1 titulo1 titulo1"
+        "texto1 . texto2"
+        "icono1 enlace1 formulario1"
+        "icono2 enlace2 formulario2"
+        "icono3 enlace3 ."
+        "icono4 enlace4 .";
+        
+}
+
+.titulo1 {
+    grid-area: titulo1;
+}
+.texto1 {
+    grid-area: texto1;
+}
+.texto2 {
+    grid-area: texto2;
+}
+.icono1 {
+    grid-area: icono1;
+    width: 100px;
+    justify-self: center;
+}
+.enlace1 {
+    grid-area: enlace1;
+    align-content: center;
+}
+.formulario1 {
+    background-color: rgb(100, 151, 132);
+    grid-area: formulario1;
+    width: 75%;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+}
+.icono2 {
+    grid-area: icono2;
+    justify-self: center;
+}
+.enlace2 {
+    grid-area: enlace2;
+    align-content: center;
+}
+.formulario2 {
+    grid-area: formulario2;
+    background-color: rgb(100, 151, 132);
+    align-content: center;
+    padding: 15px;
+    width: 75%;
+}
+.icono3 {
+    grid-area: icono3;
+    justify-self: center;
+}
+.enlace3 {
+    grid-area: enlace3;
+    align-content: center;
+}
+.icono4 {
+    grid-area: icono4;
+    justify-self: center;
+}
+.enlace4 {
+    grid-area: enlace4;
+    align-content: center;
+}
+
+/*----------------------main location--------------------------*/
+
+main {
+    padding: 15px;
+    width: 50%;
+    font-weight: 500;
+}
+
+.mapa {
+    padding: 15px;
+    
+}
+
+/*--------------------footer-----------------------------------*/
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: blanchedalmond;
+    padding: 15px;
+}
+
+footer p {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 500;
+    margin: 10px;
+}
+
+footer a {
+    margin: 5px;
+}
+
+#redes-footer {
+    display: flex;
+}
+
+/*------------- media queries--------------------*/
+/* mobile */
+@media (max-width: 500px){
+    header{
+        flex-direction: column;
+        font-size: 60%;
+        align-items: center;
+    }
+    header img {
+        width: 80px;
+        height: 80px;
+    }
+    nav{
+        width: 100%;
+    }
+
+/*--------- main index mobile--------------------*/
+
+    #titulo {
+        width: 100%;
+        margin: 0%;
+        margin-top: 10px;
+    }
+    #subtitulo {
+        width: 100%;
+        margin: 0%;
+    }
+    #section-index{
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 30px;
+        font-size: 90%;
+    }
+    section img {
+        width: 80px;
+        height: 80px;
+    }
+
+/*------------ mian contact mobile---------------------*/
+
+    .contenedor-grid {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 60px 100px repeat(7,100px);
+        grid-template-areas:
+        "titulo titulo"
+        "texto1 texto1"
+        "icono1 enlace1"
+        "icono2 enlace2"
+        "icono3 enlace3"
+        "icono4 enlace4"
+        "texto2 texto2"
+        "formulario1 formulario1"
+        "formulario2 formulario2";
+    }
+    .contenedor-grid img {
+        width: 80px;
+        height: 80px;
+    }
+    .contenedor-grid form {
+        width: 100%;
+    }
+
+/*-----------footer---------------------*/
+
+    footer {
+        font-size: 85%;
+    }
+    footer a {
+        margin: auto;
+    }
+
+}
