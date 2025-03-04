@@ -192,7 +192,7 @@ main .mapa, main .foto-inicial {
 
 /*---------- main about us------------------*/
 .foto-inicial {
-  width: 50%;
+  width: 40%;
 }
 
 /*------------- media queries--------------------*/
@@ -259,6 +259,4 @@ main .mapa, main .foto-inicial {
   footer a {
     margin: auto;
   }
-}
-
-/*# sourceMappingURL=estilo.css.map */
+}/*# sourceMappingURL=estilo.css.map */

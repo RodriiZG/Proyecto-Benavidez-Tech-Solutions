@@ -149,7 +149,8 @@ main {
 
 .foto-inicial {
     @extend .mapa;
-    width: 50%;
+    width: 40%; 
+    // no me toma la cascada, me toma el width del extend pero no el que puse aca
 }
 
 @import "./partials/mediaQueries";
