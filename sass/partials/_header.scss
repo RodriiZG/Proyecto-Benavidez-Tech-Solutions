@@ -6,6 +6,10 @@
         width: 100px;
         height: 100px;
         margin: 10px 10px;
+        transition: 1s;
+    }
+    img:hover {
+        transform: scale(1.5,1.5);
     }
     a {
         text-decoration: none;

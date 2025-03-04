@@ -26,6 +26,10 @@ h1, h2, h3 {
   width: 100px;
   height: 100px;
   margin: 10px 10px;
+  transition: 1s;
+}
+.fondoHeader img:hover {
+  transform: scale(1.5, 1.5);
 }
 .fondoHeader a {
   text-decoration: none;
@@ -89,9 +93,12 @@ footer #redes-footer {
   font-weight: 500;
   text-align: center;
 }
-#section-index img {
+#section-index .img-index {
   width: 150px;
   height: 150px;
+}
+#section-index .img-index:hover {
+  transform: scale(1.5, 1.5);
 }
 #section-index .parrafo-index {
   text-align: center;

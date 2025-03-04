@@ -9,6 +9,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bungee+Outline&family=Changa:wght@200..800&family=Exo:ital,wght@0,100..900;1,100..900&family=Train+One&display=swap" rel="stylesheet">
+    <!-- aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- css mio -->
     <link rel="stylesheet" href="./css/estilo.css">
     <title>Servicio técnico Benavidez Tech Solutions</title>
@@ -56,17 +59,17 @@
         <h2 id="subtitulo">Servicio técnico de PCs, <br> notebooks y celulares</h2>
         <section id="section-index">
             <div> <!-- bootstrap me descentra las cosas en el index y me anula las fonts, ya cambie etiquetas de clases, cambie de lugar los links en el head, cambie de lugar las etiquetas de estilo en el css poniendolas mas abajo y usando diferentes especificidades y no hay resultado. Consulte con compañeros y no pudimos resolverlo-->
-                <img src="img/icono-pc.png" alt="">
+                <img data-aos="flip-left" data-aos-duration="1000" class="img-index" src="img/icono-pc.png" alt="">
                 <h3>Armados de PCs a pedido</h3>
                 <p class="parrafo-index">Armamos la PC de tus sueños, segun tus necesidades y presupuesto. No dudes en comunicarte para ser asesorado.</p>
             </div>
             <div>
-                <img src="img/icono-store.png" alt="">
+                <img data-aos="flip-left" data-aos-duration="1000" class="img-index" src="img/icono-store.png" alt="">
                 <h3>Venta de accesorios</h3>
                 <p class="parrafo-index">Tenemos los accesorios que vos queres para tu celular o PC. Visita nuestra tienda o pedi info.</p>
             </div>
             <div>
-                <img src="img/icono-tecnico.png" alt="">
+                <img data-aos="flip-left" data-aos-duration="1000" class="img-index" src="img/icono-tecnico.png" alt="">
                 <h3>Servicio técnico</h3>
                 <p class="parrafo-index">Reparamos tus equipos electrónicos con los mejores repuestos del mercado y al mejor precio. No dudes en pedir tu presupuesto.</p>
             </div>
@@ -88,6 +91,10 @@
     
     <!-- script de bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!-- script de aos -->
+    <script>
+      AOS.init();
+    </script>
 
 </body>
 </html>
