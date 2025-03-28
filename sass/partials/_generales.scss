@@ -6,13 +6,15 @@
 }
 /* Parametros generales */
 html {
-    font-family: "Exo", serif;
+    font-family: "Exo", serif !important;
 }
 
 body {
-    background-color: rgb(154, 167, 162);    
+     background-image: url(../img/diseño.png);    
 }
-
+// main {
+//     background-image: url(../img/diseño.png);
+// }
 h1, h2, h3 {
     font-family: "Exo", serif;
 }

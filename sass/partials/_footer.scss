@@ -5,15 +5,18 @@ footer {
     justify-content: space-between;
     background-color: blanchedalmond;
     padding: 15px;
-    p {
+    .p-footer {
         font-family: 'Times New Roman', Times, serif;
         font-weight: 500;
         margin: 10px;
+        background-color: blanchedalmond;
     }
     a {
         margin: 5px;
+
     }
     #redes-footer {
         display: flex;
+        align-items: center;
     }
 }

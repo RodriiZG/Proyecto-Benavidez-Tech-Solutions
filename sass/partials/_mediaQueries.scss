@@ -36,6 +36,17 @@
         }
     } 
 
+/*------------ main tienda mobile ---------------------*/
+
+.productos {
+    flex-direction: column;
+    align-items: center;
+    .carta-producto {
+        max-width: 95%;
+        font-size: 90%;
+    }
+}
+
 /*------------ main contact mobile---------------------*/
 
     .contenedor-grid {
@@ -68,7 +79,7 @@
 
 /*---------------main about us mobile----------------*/
     main .foto-inicial {
-        width: 100%;
+        width: 100% !important;
     }
 /*-----------footer mobile---------------------*/
 
@@ -78,4 +89,36 @@
             margin: auto;
         }
     } 
+}
+
+/*--------------- Media Queries TABLET-----------------*/
+
+@media (min-width: 501px) and (max-width: 991px){
+
+/*-----------main index tablet--------------*/
+    #titulo {
+        width: 50%;
+        text-align: center;
+        margin: 20%;
+        margin-bottom: 0px;
+    }
+    #subtitulo {
+        width: 50%;
+        text-align: center;
+        margin: 20%;
+        margin-top: 0px
+    }
+    #section-index {
+        flex-wrap: wrap;
+    }
+
+/*-----------main location TABLET--------------*/
+    .mapa {
+        width: 80% !important;
+    }
+/*-----------main location TABLET--------------*/
+    .foto-inicial {
+        width: 80%;
+    }
+
 }
