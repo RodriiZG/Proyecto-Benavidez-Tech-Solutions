@@ -328,7 +328,7 @@ footer #redes-footer {
   /*------------ main contact mobile---------------------*/
   .contenedor-grid {
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 60px 100px repeat(7, 100px);
+    grid-template-rows: 60px 100px repeat(7, 120px);
     grid-template-areas: "titulo titulo" "texto1 texto1" "icono1 enlace1" "icono2 enlace2" "icono3 enlace3" "icono4 enlace4" "texto2 texto2" "formulario1 formulario1" "formulario2 formulario2";
   }
   .contenedor-grid img {

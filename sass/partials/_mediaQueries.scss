@@ -51,7 +51,7 @@
 
     .contenedor-grid {
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 60px 100px repeat(7,100px);
+        grid-template-rows: 60px 100px repeat(7,120px);
         grid-template-areas:
         "titulo titulo"
         "texto1 texto1"
