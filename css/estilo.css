@@ -278,6 +278,7 @@ footer a {
 footer #redes-footer {
   display: flex;
   align-items: center;
+  margin-right: 90px;
 }
 
 /*------------- media queries--------------------*/
