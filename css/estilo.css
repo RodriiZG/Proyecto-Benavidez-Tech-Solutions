@@ -90,7 +90,7 @@ h1, h2, h3 {
   height: 150px;
 }
 #section-index .img-index:hover {
-  transform: scale(1.5, 1.5);
+  transform: scale(1.2, 1.2);
 }
 #section-index .parrafo-index {
   background-color: rgba(170, 170, 170, 0);
@@ -114,15 +114,16 @@ h1, h2, h3 {
 }
 .productos .carta-producto {
   align-content: center;
-  max-width: 33%;
+  justify-items: center;
+  width: 20%;
   background-color: rgba(170, 170, 170, 0.9);
   color: black;
   border-radius: 10px;
   margin: 15px;
 }
 .productos img {
+  max-height: 500px;
   max-width: 100%;
-  align-items: center;
   border-radius: 10px;
 }
 
@@ -156,13 +157,15 @@ main a {
   grid-area: icono1;
   width: 100px;
   justify-self: center;
-  border-radius: 50px;
+  align-self: center;
+  border-radius: 20px;
 }
 .contenedor-grid .enlace1 {
   display: inline;
   background-color: burlywood;
   grid-area: enlace1;
   align-content: center;
+  text-align: center;
   border-radius: 10px;
   margin: 10px;
 }
@@ -173,18 +176,21 @@ main a {
   grid-area: formulario1;
   width: 75%;
   padding: 15px;
+  margin-top: 10px;
   display: flex;
   flex-direction: column;
 }
 .contenedor-grid .icono2 {
   grid-area: icono2;
   justify-self: center;
+  align-self: center;
   background-color: burlywood;
-  border-radius: 50px;
+  border-radius: 20px;
 }
 .contenedor-grid .enlace2 {
   grid-area: enlace2;
   align-content: center;
+  text-align: center;
   background-color: burlywood;
   border-radius: 10px;
   margin: 10px;
@@ -197,16 +203,19 @@ main a {
   align-content: center;
   padding: 15px;
   width: 75%;
+  margin-bottom: 10px;
 }
 .contenedor-grid .icono3 {
   grid-area: icono3;
   justify-self: center;
+  align-self: center;
   background-color: burlywood;
-  border-radius: 50px;
+  border-radius: 20px;
 }
 .contenedor-grid .enlace3 {
   grid-area: enlace3;
   align-content: center;
+  text-align: center;
   background-color: burlywood;
   border-radius: 10px;
   margin: 10px;
@@ -214,12 +223,14 @@ main a {
 .contenedor-grid .icono4 {
   grid-area: icono4;
   justify-self: center;
+  align-self: center;
   background-color: burlywood;
-  border-radius: 50px;
+  border-radius: 20px;
 }
 .contenedor-grid .enlace4 {
   grid-area: enlace4;
   align-content: center;
+  text-align: center;
   background-color: burlywood;
   border-radius: 10px;
   margin: 10px;
@@ -232,11 +243,15 @@ main {
   font-weight: 500;
   font-family: "Exo", serif;
 }
+main .parrafo-location {
+  display: inline-block;
+}
 main .mapa, main .foto-inicial {
   padding: 15px;
   background-color: burlywood;
   border-radius: 10px;
   width: 60%;
+  margin-left: 20%;
 }
 
 /*---------- main about us------------------*/
@@ -256,6 +271,7 @@ p {
 }
 
 .foto-inicial {
+  margin-left: 30% !important;
   width: 40% !important;
 }
 
@@ -312,6 +328,9 @@ footer #redes-footer {
     margin-bottom: 30px;
     font-size: 90%;
   }
+  #section-index .cajas-index {
+    margin-bottom: 10px;
+  }
   #section-index img {
     width: 80px;
     height: 80px;
@@ -322,7 +341,7 @@ footer #redes-footer {
     align-items: center;
   }
   .productos .carta-producto {
-    max-width: 95%;
+    width: 90%;
     font-size: 90%;
   }
   /*------------ main contact mobile---------------------*/
@@ -340,11 +359,13 @@ footer #redes-footer {
   }
   /*--------------main location mobile------------------------*/
   main .mapa, main .foto-inicial {
+    margin-left: auto;
     padding: 10px;
     width: 100%;
   }
   /*---------------main about us mobile----------------*/
   main .foto-inicial {
+    margin-left: auto !important;
     width: 100% !important;
   }
   /*-----------footer mobile---------------------*/
@@ -373,13 +394,18 @@ footer #redes-footer {
   #section-index {
     flex-wrap: wrap;
   }
+  #section-index .cajas-index {
+    margin-bottom: 15px;
+  }
   /*-----------main location TABLET--------------*/
   .mapa, .foto-inicial {
     width: 80% !important;
+    margin-left: auto !important;
   }
-  /*-----------main location TABLET--------------*/
+  /*-----------main about us TABLET--------------*/
   .foto-inicial {
     width: 80%;
+    margin-left: auto !important;
   }
 }
 

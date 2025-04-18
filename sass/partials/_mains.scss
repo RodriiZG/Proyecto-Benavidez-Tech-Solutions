@@ -46,7 +46,7 @@
         height: 150px;
     }
     .img-index:hover {
-        transform: scale(1.5,1.5);
+        transform: scale(1.2,1.2);
     }
     .parrafo-index {
         background-color: rgba(170, 170, 170, 0); // arreglo de color de fondo, sino se superponia con el de la caja
@@ -68,18 +68,19 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-
     .carta-producto {
         align-content: center;
-        max-width: 33%;
+        justify-items: center;
+        width: 20%;
         background-color: rgba(170, 170, 170, 0.9);
         color: black;
         border-radius: 10px;
         margin: 15px;
     }
     img {
+        max-height: 500px;
         max-width: 100%;
-        align-items: center;
+        
         border-radius: 10px;
     }
 }
@@ -120,13 +121,15 @@ main a {
         grid-area: icono1;
         width: 100px;
         justify-self: center;
-        border-radius: 50px;
+        align-self: center;
+        border-radius: 20px;
     }
     .enlace1 {
         display: inline;
         background-color: $fondo-elemento;
         grid-area: enlace1;
         align-content: center;
+        text-align: center;
         border-radius: 10px;
         margin: 10px;
     }
@@ -137,18 +140,21 @@ main a {
         grid-area: formulario1;
         width: 75%;
         padding: 15px;
+        margin-top: 10px;
         display: flex;
         flex-direction: column;
     }
     .icono2 {
         grid-area: icono2;
         justify-self: center;
+        align-self: center;
         background-color: $fondo-elemento;
-        border-radius: 50px;
+        border-radius: 20px;
     }
     .enlace2 {
         grid-area: enlace2;
         align-content: center;
+        text-align: center;
         background-color: $fondo-elemento;
         border-radius: 10px;
         margin: 10px;
@@ -161,16 +167,19 @@ main a {
         align-content: center;
         padding: 15px;
         width: 75%;
+        margin-bottom: 10px;
     }
     .icono3 {
         grid-area: icono3;
         justify-self: center;
+        align-self: center;
         background-color: $fondo-elemento;
-        border-radius: 50px;
+        border-radius: 20px;
     }
     .enlace3 {
         grid-area: enlace3;
         align-content: center;
+        text-align: center;
         background-color: $fondo-elemento;
         border-radius: 10px;
         margin: 10px;
@@ -178,13 +187,15 @@ main a {
     .icono4 {
         grid-area: icono4;
         justify-self: center;
+        align-self: center;
         background-color: $fondo-elemento;
-        border-radius: 50px;
+        border-radius: 20px;
         
     }
     .enlace4 {
         grid-area: enlace4;
         align-content: center;
+        text-align: center;
         background-color: $fondo-elemento;
         border-radius: 10px;
         margin: 10px;
@@ -197,11 +208,16 @@ main {
     padding: 15px;
     font-weight: 500;
     font-family: $font-general;
+    .parrafo-location {
+        display: inline-block;
+    }
     .mapa {
+        
         padding: 15px;
         background-color: $fondo-elemento;
         border-radius: 10px;
         width: 60%;
+        margin-left: 20%;
     }
 }
 /*---------- main about us------------------*/
@@ -222,5 +238,6 @@ p {
 }
 .foto-inicial {
     @extend .mapa;
+    margin-left: 30% !important;
     width: 40% !important; 
 }

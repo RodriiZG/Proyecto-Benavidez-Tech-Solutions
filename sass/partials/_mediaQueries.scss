@@ -30,6 +30,9 @@
         align-items: center;
         margin-bottom: 30px;
         font-size: 90%;
+        .cajas-index{
+            margin-bottom: 10px;
+        }
         img {
             width: 80px;
             height: 80px;
@@ -42,7 +45,7 @@
     flex-direction: column;
     align-items: center;
     .carta-producto {
-        max-width: 95%;
+        width: 90%;
         font-size: 90%;
     }
 }
@@ -73,12 +76,14 @@
 
 /*--------------main location mobile------------------------*/
     main .mapa {
+        margin-left: auto;
         padding: 10px;
         width: 100%;
     }
 
 /*---------------main about us mobile----------------*/
     main .foto-inicial {
+        margin-left: auto !important;
         width: 100% !important;
     }
 /*-----------footer mobile---------------------*/
@@ -110,15 +115,20 @@
     }
     #section-index {
         flex-wrap: wrap;
+        .cajas-index{
+            margin-bottom: 15px;
+        }
     }
 
 /*-----------main location TABLET--------------*/
     .mapa {
         width: 80% !important;
+        margin-left: auto !important;
     }
-/*-----------main location TABLET--------------*/
+/*-----------main about us TABLET--------------*/
     .foto-inicial {
         width: 80%;
+        margin-left: auto !important;
     }
 
 }
